@@ -14,6 +14,15 @@ h1{
     width: 30px;
     margin: 0 auto;
     padding: 0.2em;
+    transition: all ease 0.1s;
+}
+
+.idioma:active{
+    transform: translateY(5px) scale(1.1);
+}
+
+.idioma:hover{
+    cursor: pointer;
 }
 
 nav{
@@ -28,4 +37,3 @@ nav{
     left: 0;
     gap: 1em;  /* Agrega un espacio entre cada elemento del nav */
 }
-
