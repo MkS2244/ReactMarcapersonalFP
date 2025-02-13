@@ -1,0 +1,17 @@
+p{
+    text-transform: uppercase;
+}
+
+nav {
+    background-color: #f1f1e6;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+div.row{
+    display: block;
+}

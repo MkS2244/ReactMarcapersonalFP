@@ -13,9 +13,9 @@ const MP = () => {
     return (
         <nav>
             <a href="/">
-                <img className='logo d-inline-block align-top' src={logo} alt="Logo Marcapersona" />
+                <img className='logo' src={logo} alt="Logo Marcapersona" />
             </a>
-            <h1 className='navbar-text font-weight-bold d-none d-sm-block user-select-none'>Marca Personal FP</h1>
+            <h1>Marca Personal FP</h1>
             <SelectorIdioma idioma='es' />
         </nav>
     )
