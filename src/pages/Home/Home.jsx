@@ -20,7 +20,7 @@ const Home = () => {
 
     return (
         <div className='row'>
-            <div className='col-12'>
+            <div className='col-12 space'>
                 <Link to="/empresa" >
                     <img src={empresas} className='imagenes col-12 col-sm-4 ' />
                 </Link>
@@ -31,7 +31,7 @@ const Home = () => {
                     <img src={centros} className='imagenes col-12 col-sm-4' />
                 </Link>
             </div>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }

@@ -1,10 +1,15 @@
 .imagenes {
     padding: 0 auto;
     width: 100%;
-    
+
 }
 
-@media screen and (max-width: 768px) {
-
-    
+.space {
+    /* 
+        Para dejar espacio entre las imagenes y el footer 
+        sin que descuadre la maquetacion de la cabecera y las imagenes
+    */
+    margin-bottom: 5rem;
 }
+
+@media screen and (max-width: 768px) {}
