@@ -2,17 +2,18 @@ import './App.css'
 // ---------------------
 // COMPONENTES
 // ---------------------
-import Cabecera from './pages/header/Cabecera'
+import Cabecera from './pages/Cabecera/Cabecera'
 import Home from './pages/Home/Home'
-import Empresa from './components/Empresa/Empresa'
-import Alumno from './components/Alumno/Alumno'
-import Centro from './components/Centro/Centro'
+import Empresa from './pages/Empresa/Empresa'
+import Alumno from './pages/Alumno/Alumno'
+import Centro from './pages/Centro/Centro'
 import {Routes, Route} from 'react-router-dom'
 
 function App() {
 
   return (
     <>
+      <div className='container'>
         <Cabecera />
         <Routes>
             <Route path="/" element={<Home />} />
@@ -20,8 +21,8 @@ function App() {
             <Route path='/alumno' element={<Alumno />} />
             <Route path='/centroeducativo' element={<Centro />} />
         </Routes>
+      </div>
     </>
   )
 }
-
 export default App

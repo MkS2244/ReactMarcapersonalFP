@@ -1,0 +1,49 @@
+a , a:hover, a:active{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    background-color: #364f59;
+    color: white;
+}
+
+ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+.display-4 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.contenidoempresas{
+    color: white;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.titulo{
+    font-weight: 600;
+    color: rgb(31, 41, 55);
+}
+
+.contenido{
+    /* max-width: 300px; */
+    padding: 0.5rem;
+    background-color: #ce7d2d;
+    border-radius: 10px;
+    box-shadow:  20px 20px 30px rgba(0, 0, 0, .3);
+    display: inline-block;
+    justify-items: space-between;
+    width: 50%;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.logoF{
+    width: 5%;
+    padding: 0.2em;
+}

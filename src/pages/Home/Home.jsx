@@ -10,24 +10,28 @@ import centros from '../../img/school.jpg';
 // ---------------------
 import './Home.css';
 
+// ---------------------
+// COMPONENTES
+// ---------------------
+import Footer from '../../components/Footer/Footer';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
 
     return (
-        <div>
-            <div>
+        <div className='row'>
+            <div className='col-12 space'>
                 <Link to="/empresa" >
-                    <img src={empresas} className='imagenes col-12 col-sm-4 order-3' />
+                    <img src={empresas} className='imagenes col-12 col-sm-4 ' />
                 </Link>
                 <Link to="/alumno" >
-                    <img src={estudiantes} className='imagenes col-12 col-sm-4 order-2' />
+                    <img src={estudiantes} className='imagenes col-12 col-sm-4' />
                 </Link>
                 <Link to="/centroeducativo">
-                    <img src={centros} className='imagenes col-12 col-sm-4 order-1' />
+                    <img src={centros} className='imagenes col-12 col-sm-4' />
                 </Link>
             </div>
-
+            <Footer />
         </div>
     )
 }

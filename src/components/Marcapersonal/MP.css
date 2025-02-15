@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-
 h1{
     font-size: 3em;
     color:#f59432;
-    font-family: 'Merriweather', serif;
     margin: 0;
     flex-grow: 1;
     /* para distribuir el espacio entre todos los elementos. Con flex-grow "crecen" los elementos al tamaño indicado */
@@ -31,9 +28,10 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 0.5em 2em;
-    position: fixed;
+    margin-bottom: 5em;
+    position: sticky;
     width: 100%;
     top: 0;
     left: 0;
-    gap: 1em;  /* Agrega un espacio entre cada elemento del nav */
+    /* gap: 1em;  Agrega un espacio entre cada elemento del nav */
 }
