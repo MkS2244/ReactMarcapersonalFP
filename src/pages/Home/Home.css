@@ -1,7 +1,10 @@
 .imagenes {
     padding: 0 auto;
     width: 100%;
+}
 
+.imagenes:hover {
+    animation: slide-top 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
 .space {
@@ -9,7 +12,28 @@
         Para dejar espacio entre las imagenes y el footer 
         sin que descuadre la maquetacion de la cabecera y las imagenes
     */
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+}
+
+footer {
+    background-color: #364f59;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-45px);
+    }
 }
 
 @media screen and (max-width: 768px) {}

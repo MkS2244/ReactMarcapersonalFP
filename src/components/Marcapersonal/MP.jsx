@@ -1,14 +1,14 @@
 // -----------------------
 // IMAGEN DEL LOGO Y CSS
 // -----------------------
-import logo from '../../img/mp-logoNaranja100.png'
-import './MP.css'
+import logo from '../../img/mp-logoNaranja100.png';
+import './MP.css';
 // -----------------------
 // COMPONENTE
 // -----------------------
-import SelectorIdioma from '../Idioma/SelectorIdioma'
+import Idioma from '../Idioma/Idioma';
 
-const MP = () => {
+const MP = ({asignarIdioma}) => {
 
     return (
         <nav>
@@ -16,7 +16,7 @@ const MP = () => {
                 <img className='logo' src={logo} alt="Logo Marcapersona" />
             </a>
             <h1>Marca Personal FP</h1>
-            <SelectorIdioma idioma='es' />
+            <Idioma asignarIdioma={asignarIdioma}/>
         </nav>
     )
 }

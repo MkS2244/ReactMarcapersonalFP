@@ -6,23 +6,41 @@ a , a:hover, a:active{
 footer{
     background-color: #364f59;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin-top: auto;
+    border-top: 1px solid white;
+    text-align: center;
+}
+
+ul{
+    padding: 0;
 }
 
 ul li{
     list-style-type: none;
-    display: inline;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .display-4 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 300;
     line-height: 1.2;
+    text-align: center;
 }
 
 .contenidoempresas{
     color: white;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* gap añade un espacio entre los elementos */
+    width: 100%;
 }
 
 .titulo{
@@ -31,19 +49,20 @@ ul li{
 }
 
 .contenido{
-    /* max-width: 300px; */
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: #ce7d2d;
     border-radius: 10px;
-    box-shadow:  20px 20px 30px rgba(0, 0, 0, .3);
-    display: inline-block;
-    justify-items: space-between;
-    width: 50%;
-    margin-top: 10px;
-    margin-right: 20px;
+    box-shadow:  5px 5px 15px rgba(0, 0, 0, .3);
+    width: 250px;
+    text-align: center;
 }
 
 .logoF{
-    width: 5%;
-    padding: 0.2em;
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.5s ease;
+}
+
+.logoF:hover{
+    transform: scale(1.1);
 }

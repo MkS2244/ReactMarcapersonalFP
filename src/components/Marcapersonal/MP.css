@@ -27,11 +27,9 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5em 2em;
-    margin-bottom: 5em;
+    margin-bottom: 5rem;
     position: sticky;
     width: 100%;
+    padding: 1rem 2rem;
     top: 0;
-    left: 0;
-    /* gap: 1em;  Agrega un espacio entre cada elemento del nav */
 }

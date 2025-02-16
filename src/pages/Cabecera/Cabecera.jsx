@@ -2,12 +2,13 @@
 // COMPONENTES
 // ---------------------------
 import MP from "../../components/Marcapersonal/MP";
+import './Cabecera.css'
 
-const Cabecera = () => {
+const Cabecera = ({asignarIdioma}) => {
 
     return (
         <header>
-            <MP />
+            <MP asignarIdioma={asignarIdioma} />
         </header>
     )
 }

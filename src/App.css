@@ -3,6 +3,9 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
@@ -12,10 +15,14 @@
   transition: filter 300ms;
 }
 
-.card {
-  padding: 2em;
+.app-container{
+  display: flex;
+  flex-direction: column;
 }
 
-.read-the-docs {
-  color: #888;
+.mp-rep{
+  background-image: url('../../img/mp-logoNaranja10fondo.png');
+  background-repeat:space;
+  background-size: 30px;
+  background-position: center;
 }
