@@ -21,13 +21,13 @@ export async function getCounts() {
     
     const alumnosCount = alumnos.count;
 
-    console.log("empresasCount: ",empresasCount)
-    console.log("proyectosCount: ",proyectosCount)
-    console.log("alumnosCount: ",alumnosCount)
+    // console.log("empresasCount: ",empresasCount)
+    // console.log("proyectosCount: ",proyectosCount)
+    // console.log("alumnosCount: ",alumnosCount)
 
     return({
         empresasCount,
         proyectosCount,
         alumnosCount
-})
+    })
 }

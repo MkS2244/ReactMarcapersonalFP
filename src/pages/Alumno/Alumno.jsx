@@ -3,14 +3,9 @@ import './Alumno.css';
 const Alumno = () => {
 
     return (
-
-        <div className="row">
-            <div className="col-12">
-                <nav>
-                    <p>Alumno</p>
-                </nav>
-            </div>
-        </div>
+        <nav>
+            <p>Alumno</p>
+        </nav>
     )
 }
 export default Alumno;

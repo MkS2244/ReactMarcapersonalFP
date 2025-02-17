@@ -18,7 +18,7 @@ const useIdioma = () =>{
     }
   
     useEffect(() =>{
-      console.log("Idioma cambiado a: ", idioma);
+      // console.log("Idioma cambiado a: ", idioma);
     }, [idioma]);
 
     return {idioma, asignarIdioma};

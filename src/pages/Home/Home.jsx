@@ -24,10 +24,10 @@ const Home = () => {
                 <Link to="/empresa " >
                     <img src={empresas} className='imagenes col-12 col-sm-4 ' />
                 </Link>
-                <Link to="/alumno imagen-container" >
+                <Link to="/alumno" >
                     <img src={estudiantes} className='imagenes col-12 col-sm-4' />
                 </Link>
-                <Link to="/centroeducativo imagen-container">
+                <Link to="/centroeducativo">
                     <img src={centros} className='imagenes col-12 col-sm-4' />
                 </Link>
             </div>

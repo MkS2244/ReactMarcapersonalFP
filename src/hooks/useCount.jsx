@@ -16,7 +16,7 @@ const useCount = () => {
         setBuscando(true);
 
         getCounts().then(datos => {
-            console.log("Los datos de getCount: ",datos)
+            //console.log("Los datos de getCount: ",datos)
 
             // Actualizo el estado con los datos obtenidos
             setCount({...count, 
