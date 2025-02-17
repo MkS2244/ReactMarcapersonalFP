@@ -15,9 +15,17 @@ import './Footer.css';
 import IdiomaContext from '../../contexto/idiomaContext';
 import { useContext } from 'react';
 
+// -----------------------
+// HOOKS
+// -----------------------
+import useCount from '../../hooks/useCount';
+
+
 const Footer = () => {
     // Accedo a los idiomas desde el contexto
     const idioma = useContext(IdiomaContext);
+
+    const contador = useCount();
 
     return (
         <footer>
@@ -25,15 +33,15 @@ const Footer = () => {
                 <div className="col-12 contenidoempresas">
                     <div className="col-md-3 contenido">
                         <h5 className='titulo'>{idioma.emp}</h5>
-                        <h4 className='display-4'>0</h4>
+                        <h4 className='display-4'>{contador.count.empresas}</h4>
                     </div>
                     <div className="col-md-3 contenido">
                         <h5 className='titulo'>{idioma.pro}</h5>
-                        <h4 className='display-4'>0</h4>
+                        <h4 className='display-4'>{contador.count.proyectos}</h4>
                     </div>
                     <div className="col-md-3 contenido">
                         <h5 className='titulo'>{idioma.alu}</h5>
-                        <h4 className='display-4'>0</h4>
+                        <h4 className='display-4'>{contador.count.alumnos}</h4>
                     </div>
                 </div>
                 <div className="text-center">
