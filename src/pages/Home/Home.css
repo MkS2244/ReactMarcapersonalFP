@@ -12,10 +12,11 @@
         Para dejar espacio entre las imagenes y el footer 
         sin que descuadre la maquetacion de la cabecera y las imagenes
     */
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
 }
 
-footer {
+/* footer {
     background-color: #364f59;
     color: white;
     text-align: center;
@@ -24,7 +25,7 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
-}
+} */
 
 
 @keyframes slide-top {

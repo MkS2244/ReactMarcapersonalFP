@@ -1,19 +1,18 @@
-
-import { useContext } from 'react';
-import IdiomaContext from '../../contexto/idiomaContext';
+// --------------------
+// COMPONENTES
+// --------------------
+//import './Empresa.css'
+import ProyectSearch from '../../components/Busqueda Proyectos/ProyectSearch';
+//import MenuEmpresa from '../../components/Menu Empresa/menuEmpresa';
 
 const Empresa = () => {
 
-    const context = useContext(IdiomaContext);
-
     return(
-        <nav>
-            <ul>
-                <li><span>{context.emp}</span></li>
-                <li>{context.pro}</li>
-                <li>{context.alu}</li>
-            </ul>
-        </nav>
+        <div className="row">
+            <div className="col-12">
+              <ProyectSearch />  
+            </div>
+        </div>
     )
 }
 export default Empresa;

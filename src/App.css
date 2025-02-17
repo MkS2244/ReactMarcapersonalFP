@@ -1,11 +1,10 @@
-#root {
+/* #root {
   margin: 0 auto;
-
   text-align: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
+} */
 
 .logo {
   height: 6em;

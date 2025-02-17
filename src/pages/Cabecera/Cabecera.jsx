@@ -7,7 +7,7 @@ import './Cabecera.css'
 const Cabecera = ({asignarIdioma}) => {
 
     return (
-        <header>
+        <header className="header">
             <MP asignarIdioma={asignarIdioma} />
         </header>
     )

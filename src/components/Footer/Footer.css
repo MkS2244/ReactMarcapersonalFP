@@ -3,23 +3,21 @@ a , a:hover, a:active{
     color: white;
 }
 
-footer{
+.footer{
     background-color: #364f59;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    margin-top: auto;
-    border-top: 1px solid white;
     text-align: center;
 }
 
-ul{
+.ul{
     padding: 0;
 }
 
-ul li{
+.ul .li{
     list-style-type: none;
     display: inline-block;
     margin: 0 10px;

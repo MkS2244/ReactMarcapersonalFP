@@ -1,0 +1,19 @@
+.ul, .li {
+    text-decoration: none;
+}
+
+a, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: #364f59;
+}
+
+.empresa{
+    display:flex;
+    flex-direction: row;
+    background-color: #f1f1e6;
+}
+
+.spanEmp{
+    color: #ce7d2d;
+    font-weight: 800;
+}

@@ -11,7 +11,7 @@ import Idioma from '../Idioma/Idioma';
 const MP = ({asignarIdioma}) => {
 
     return (
-        <nav>
+        <nav className='mp'>
             <a href="/">
                 <img className='logo' src={logo} alt="Logo Marcapersona" />
             </a>

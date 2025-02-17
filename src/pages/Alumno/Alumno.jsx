@@ -3,8 +3,8 @@ import './Alumno.css';
 const Alumno = () => {
 
     return (
-        <nav>
-            <p>Alumno</p>
+        <nav className='alumno'>
+            <p className='p'>Alumno</p>
         </nav>
     )
 }

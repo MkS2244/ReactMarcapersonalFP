@@ -1,8 +1,8 @@
-p{
+.p{
     text-transform: uppercase;
 }
 
-nav {
+.alumno {
     background-color: #f1f1e6;
     text-align: center;
     position: relative;

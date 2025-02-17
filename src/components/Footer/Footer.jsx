@@ -28,10 +28,12 @@ const Footer = () => {
     const contador = useCount();
 
     return (
-        <footer>
+        <footer className='footer'>
             <div className="row">
                 <div className="col-12 contenidoempresas">
                     <div className="col-md-3 contenido">
+                        {/* Aqui utilizo el Context de idiomas y accedo al contenido.
+                            Hago lo mismo con el custom hook useCount */}
                         <h5 className='titulo'>{idioma.emp}</h5>
                         <h4 className='display-4'>{contador.count.empresas}</h4>
                     </div>
@@ -45,36 +47,36 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="text-center">
-                    <ul>
-                        <li>
+                    <ul className='ul'>
+                        <li className='li'>
                             <a href="https://cifpcarlos3.es/es" target='blank'>
                                 <h4>CIFP Carlos III</h4>
                             </a>
                         </li>
-                        <li><small>C/ Carlos III, 30201 - Cartagena | 30019702@murciaeduca.es | 968321301</small></li>
+                        <li className='li'><small>C/ Carlos III, 30201 - Cartagena | 30019702@murciaeduca.es | 968321301</small></li>
                     </ul>
-                    <ul className='d-flex justify-content-center align-items-center mt-3'>
-                        <li className='mx-2'>
+                    <ul className='d-flex ul justify-content-center align-items-center mt-3'>
+                        <li className='mx-2 li'>
                             <a href="https://www.facebook.com/cifpcarlos3" target='blank'>
                                 <img className='logoF' src={fb} alt="Logo Facebook" />
                             </a>
                         </li>
-                        <li className='mx-2'>
+                        <li className='mx-2 li'>
                             <a href="https://twitter.com/cifpcarlos3" target='blank' >
                                 <img className='logoF' src={tw} alt="Logo Twitter" />
                             </a>                            
                         </li>
-                        <li className='mx-2'>
+                        <li className='mx-2 li'>
                             <a href="https://www.instagram.com/cifpcarlos3" target='blank'>
                                 <img className='logoF' src={ig} alt="Logo Instagram" />
                             </a>                            
                         </li>
-                        <li className='mx-2'>
+                        <li className='mx-2 li'>
                             <a href="https://www.tiktok.com/@cifpcarlos3" target='blank'>
                                 <img className='logoF' src={tk} alt="Logo TikTok" />
                             </a>                            
                         </li>
-                        <li className='mx-2'>
+                        <li className='mx-2 li'>
                             <a href="https://www.youtube.com/c/cifpcarlosiiicartagena" target='blank'>
                                 <img className='logoF' src={yt} alt="Logo YouTube" />
                             </a>                            
@@ -82,13 +84,13 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div>
-                    <ul>
-                        <li>
+                    <ul className='ul'>
+                        <li className='li'>
                             <a href="/">
                                 <img src={logoFooter} className='logoF' alt="Logo Marca Personal" />
                             </a>
                         </li>
-                        <li>
+                        <li className='li'>
                             <small><span>Marca Personal FP</span> | Diseño Web CFGS Desarrollo de Aplcaciones Web &copy; 2025</small>
                         </li>
                     </ul>
