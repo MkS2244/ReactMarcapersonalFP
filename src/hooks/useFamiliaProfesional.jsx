@@ -22,6 +22,6 @@ const useFamiliaProfesional = () => {
     //para que se ejecute una sola vez al cargar la página
     useEffect(obtenerFP, []);
 
-    return {fp, buscando}
+    return fp
 }
 export default useFamiliaProfesional;

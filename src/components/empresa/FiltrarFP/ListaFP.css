@@ -1,0 +1,31 @@
+.fpBtn {
+    display: row;
+    margin: 4px;
+    border-radius: 6px;
+    user-select: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 300ms;
+    height: 32px;
+    align-items: center;
+    box-shadow: inset 22px 22px 44px rgba(0, 0, 0, 0.15), inset -22px -22px 44px rgba(255, 255, 255, 0.17);
+    outline: none;
+    justify-content: center;
+    min-width: 55px;
+    font-size: 17px;
+    transform: translateY(0px);
+    transition-duration: 50ms;
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.fpBtn:hover {
+    background-color: #2c2c2c;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.23) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.17) 0px 2px 4px 1px;
+    transition-duration: 50ms;
+    transform: translateY(-2px);
+}
+
+.fpBtn:active{
+    background-color: #ce7d2d;
+    box-shadow: rgba(0, 0, 0, 0.26) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.15) 0px 3px 6px 2px;
+}

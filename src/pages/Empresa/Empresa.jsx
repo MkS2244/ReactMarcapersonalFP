@@ -2,7 +2,7 @@
 // COMPONENTES
 // --------------------
 //import './Empresa.css'
-import ProyectSearch from '../../components/Busqueda Proyectos/ProyectSearch';
+import EmpresaProyecto from "../../components/empresa/Busqueda Proyectos/EmpresaProyecto";
 //import MenuEmpresa from '../../components/Menu Empresa/menuEmpresa';
 
 const Empresa = () => {
@@ -10,7 +10,7 @@ const Empresa = () => {
     return(
         <div className="row">
             <div className="col-12">
-              <ProyectSearch />  
+              <EmpresaProyecto />  
             </div>
         </div>
     )
