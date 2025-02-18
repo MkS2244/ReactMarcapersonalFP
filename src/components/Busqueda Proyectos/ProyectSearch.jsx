@@ -7,7 +7,8 @@ const ProyectSearch = () => {
         <div className="row">
             <div className="col-12">
                 <MenuEmpresa />
-                <div className="card">
+                <div>
+                    <h5>Búsqueda de Proyectos</h5>
                     <FiltrarFP />
                 </div>
             </div>

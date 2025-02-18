@@ -3,8 +3,8 @@ import { getFamiliaProfesional } from "../services/getFamiliaProfesional";
 
 const useFamiliaProfesional = () => {
 
-    const [fp, setFP] = useState({data: []});
-
+    const [fp, setFP] = useState( [] );
+    // Almaceno las familias profesionales en un array
     const [buscando, setBuscando] = useState(true);
 
     function obtenerFP () {
@@ -12,9 +12,7 @@ const useFamiliaProfesional = () => {
 
         getFamiliaProfesional().then(datos => {
           
-            setFP({...fp,
-                data: datos
-            })
+            setFP( datos )
             console.log("Datos de FP: ",datos)
 
             setBuscando(false)
@@ -24,6 +22,6 @@ const useFamiliaProfesional = () => {
     //para que se ejecute una sola vez al cargar la página
     useEffect(obtenerFP, []);
 
-    return {fp}
+    return {fp, buscando}
 }
 export default useFamiliaProfesional;
