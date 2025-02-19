@@ -2,13 +2,17 @@ import ListaFP from "../FiltrarFP/ListaFP";
 import MenuEmpresa from "../../Menu Empresa/menuEmpresa";
 import useFamiliaProfesional from "../../../hooks/useFamiliaProfesional";
 import './EmpresaProyecto.css'
+import IdiomaContext from "../../../contexto/idiomaContext";
+import { useContext } from "react";
 
 const EmpresaProyecto = () => {
+
+    const idioma = useContext(IdiomaContext);
 
     const fp = useFamiliaProfesional();
 
     function listarFP(familia) {
-        return <ListaFP key={familia.codigo} nombre={familia.nombre} />
+        return <ListaFP key={familia.codigo} nombre={familia.nombre} codigo={familia.codigo}/>
     }
 
     return (
@@ -16,13 +20,13 @@ const EmpresaProyecto = () => {
             <div className="col-12">
                 <MenuEmpresa />
                 <div className="card">
-                    <h5 className="card-header colorTexto">Búsqueda de Proyectos</h5>
+                    <h5 className="card-header colorTexto">{idioma.busquedaP}</h5>
                     <div className="customCheckBoxHolder">
                         <details className='filter-section'>
                             <summary className='filter-title'>
-                                Filtrar por familia profesional
+                                {idioma.filtrarFP}
                             </summary>
-                            <div className="filter-content">
+                            <div className="checkbox-container">
                                 {fp.map(listarFP)}
                             </div>
                         </details>
@@ -30,19 +34,6 @@ const EmpresaProyecto = () => {
                 </div>
             </div>
         </div>
-        // <div className="row">
-        //     <div className="col-12">
-        //         <MenuEmpresa />
-        //         <div className="card">
-        //             <h5 className="card-header colorTexto">Búsqueda de Proyectos</h5>
-        //             <summary className='filter-title'>Filtrar por familia profesional
-        //                 <div className="customCheckBoxHolder">
-        //                     {fp.map(listarFP)}
-        //                 </div>
-        //             </summary>
-        //         </div>
-        //     </div>
-        // </div>
     )
 }
 export default EmpresaProyecto;

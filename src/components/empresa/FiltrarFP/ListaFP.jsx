@@ -1,14 +1,18 @@
-// ----------------------
-// IMPORTS
-// ----------------------
-//import dropdown from '../../img/dropdown.svg'
-import './ListaFP.css'
+import './ListaFP.css';
 
 const ListaFP = (prop) => {
 
+    const idFP = `CFP${prop.codigo}`
 
     return (
-        <button className='fpBtn'>{prop.nombre}</button>
+        <div>
+            <input type="checkbox" id={idFP} className="customCheckBoxInput" />
+            <label htmlFor={idFP} className="customCheckBoxWrapper">
+                <div className="customCheckBox">
+                    <div className='fpBtn'>{prop.nombre}</div>
+                </div>
+            </label>
+        </div>
     )
 }
 export default ListaFP;
