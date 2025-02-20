@@ -16,6 +16,32 @@
     margin-top: 5rem;
 }
 
+.img:hover, .img2:hover, .img3:hover{
+    transform: translateY(-10px);
+}
+
+/* .over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-color: #ce7d2d8a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 40px;
+}
+
+.imagenes:hover .over{
+    opacity: 1;
+} */
+
+
+
 /* footer {
     background-color: #364f59;
     color: white;

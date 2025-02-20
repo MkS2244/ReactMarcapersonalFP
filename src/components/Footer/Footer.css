@@ -41,6 +41,10 @@ a , a:hover, a:active{
     width: 100%;
 }
 
+.C3{
+    color:white;
+}
+
 .titulo{
     font-weight: 600;
     color: rgb(31, 41, 55);

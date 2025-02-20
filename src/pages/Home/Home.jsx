@@ -21,14 +21,14 @@ const Home = () => {
     return (
         <div className='row'>
             <div className='col-12 space'>
-                <Link to="/empresa " >
+                <Link to="/empresa" >
                     <img src={empresas} className='imagenes col-12 col-sm-4 ' />
                 </Link>
                 <Link to="/alumno" >
                     <img src={estudiantes} className='imagenes col-12 col-sm-4' />
                 </Link>
                 <Link to="/centroeducativo">
-                    <img src={centros} className='imagenes col-12 col-sm-4' />
+                    <img src={centros} className='imagenes  col-12 col-sm-4' />
                 </Link>
             </div>
             <Footer />

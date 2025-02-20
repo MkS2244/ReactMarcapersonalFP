@@ -10,6 +10,7 @@ import Idioma from '../Idioma/Idioma';
 
 const MP = ({asignarIdioma}) => {
 
+    
     return (
         <nav className='mp'>
             <a href="/">

@@ -11,8 +11,9 @@ export function getProyects (){
             id: proyecto.id,            // id del proyecto
             ciclos: proyecto.ciclos.map( ciclo => ({    
             // hago el map de los ciclos para conseguir el codigo del ciclo y el nombre
-              codCiclo: ciclo.codCiclo,  // codigo del ciclo  
-              nombre: ciclo.nombre      // nombre del ciclo
+              codCiclo: ciclo.codCiclo,      // codigo del ciclo  
+              codFamilia: ciclo.codFamilia,  // codigo de la familia
+              nombre: ciclo.nombre           // nombre del ciclo
             })),
             participantes: proyecto.participantes.map(participante => ({
             // map de los participantes y concateno el nombre y apellidos   

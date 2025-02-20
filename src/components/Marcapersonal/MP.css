@@ -1,5 +1,6 @@
 h1{
-    font-size: 3em;
+    font-size: 3.5em;
+    font-weight: 500;
     color:#f59432;
     margin: 0;
     flex-grow: 1;
@@ -8,7 +9,7 @@ h1{
 }
 
 .idioma {
-    width: 30px;
+    width: 35px;
     margin: 0 auto;
     padding: 0.2em;
     transition: all ease 0.1s;
@@ -27,8 +28,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin-bottom: 5rem; */
     width: 100%;
     padding: 1rem 2rem;
-    top: 0;
+    
 }

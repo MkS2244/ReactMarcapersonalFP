@@ -10,6 +10,7 @@ import Centro from './pages/Centro/Centro';
 import { Routes, Route } from 'react-router-dom';
 import IdiomaContext from './contexto/idiomaContext';
 import useIdioma from './hooks/useIdioma';
+import EmpresaProyecto from './pages/Proyectos/EmpresaProyecto';
 
 function App() {
 
@@ -23,9 +24,10 @@ function App() {
           <Cabecera asignarIdioma={language.asignarIdioma} />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path='/empresa' element={<Empresa />} />
+            <Route path='/empresa/*' element={<Empresa />} />
             <Route path='/alumno' element={<Alumno />} />
             <Route path='/centroeducativo' element={<Centro />} />
+            <Route path="/empresa/proyectos" element={<EmpresaProyecto />} />
           </Routes>
         </div>
       </IdiomaContext.Provider>

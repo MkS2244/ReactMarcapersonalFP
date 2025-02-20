@@ -25,6 +25,6 @@ const useProyects = () => {
     //para que se ejecute una sola vez al cargar la página
     useEffect(obtenerFP, [])
 
-    return {proyects, buscando}
+    return {proyects}
 }
 export default useProyects;

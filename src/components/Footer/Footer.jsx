@@ -50,7 +50,7 @@ const Footer = () => {
                     <ul className='ul'>
                         <li className='li'>
                             <a href="https://cifpcarlos3.es/es" target='blank'>
-                                <h4>CIFP Carlos III</h4>
+                                <h4 className='C3'>CIFP Carlos III</h4>
                             </a>
                         </li>
                         <li className='li'><small>C/ Carlos III, 30201 - Cartagena | 30019702@murciaeduca.es | 968321301</small></li>
