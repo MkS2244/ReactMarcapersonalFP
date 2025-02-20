@@ -4,7 +4,7 @@ import useFamiliaProfesional from "../../hooks/useFamiliaProfesional";
 import './EmpresaProyecto.css'
 import IdiomaContext from "../../contexto/idiomaContext";
 import { useContext } from "react";
-import ResultadoBusquedaPr from "../../components/empresa/Busqueda Proyectos/ResultadoBusquedaProyecto";
+import ResultadoBusquedaPr from "../../components/empresa/Busqueda Proyectos/ResultadoBusquedaPr";
 
 const EmpresaProyecto = () => {
 
