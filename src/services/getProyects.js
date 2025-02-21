@@ -7,12 +7,13 @@ export function getProyects (){
     .then(response => response.json())
     .then(data => {
         return data.map( proyecto => ({
-            nombre: proyecto.nombre,    // nombre del proyecto
-            id: proyecto.id,            // id del proyecto
+            nombre: proyecto.nombre,         // nombre del proyecto
+            id: proyecto.id,                 // id del proyecto
+            docente_id: proyecto.docente_id, // id del docente
             ciclos: proyecto.ciclos.map( ciclo => ({    
             // hago el map de los ciclos para conseguir el codigo del ciclo y el nombre
               codCiclo: ciclo.codCiclo,      // codigo del ciclo  
-              codFamilia: ciclo.codFamilia,  // codigo de la familia
+              familia_id: ciclo.familia_id,  // codigo de la familia
               nombre: ciclo.nombre           // nombre del ciclo
             })),
             participantes: proyecto.participantes.map(participante => ({
