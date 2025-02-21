@@ -4,9 +4,14 @@
 import useProyects from "../../../hooks/useProyects";
 
 
-const Proyectomincard = () => {
+const Proyectomincard = (prop) => {
 
-    //const proyecto = useProyects();
+    //console.log( "CARD: ", prop)
+
+    function mostrarParticipante (participante)
+    {
+        return <p className="mb-2 pb-1">{participante.nombre}</p>
+    }
 
     return (
         <div>
@@ -14,6 +19,7 @@ const Proyectomincard = () => {
                 <div className="row d-flex justify-content-center">
                     <div className="col col-md-9 col-lg-7 col-xl-6">
                         <div className="card borde">
+
                             <div className="card-body p-4">
                                 <div className="d-flex">
                                     <div className="flex-shrink-0">
@@ -21,8 +27,9 @@ const Proyectomincard = () => {
                                             alt="Generic placeholder image" className="img-fluid imgCard" />
                                     </div>
                                     <div className="flex-grow-1 ms-3">
-                                        <h5 className="mb-1">Danny McLoan</h5>
-                                        <p className="mb-2 pb-1">Senior Journalist</p>
+                                        <h5 className="mb-1">{prop.nombre}</h5>
+                                        <p className="mb-2 pb-1">Alumnos</p>
+                                        {prop.participantes.map(mostrarParticipante)}
                                         <div className="d-flex justify-content-start rounded-3 p-2 mb-2 bg-body-tertiary">
                                             <div>
                                                 <p className="small text-muted mb-1">Articles</p>
@@ -37,10 +44,6 @@ const Proyectomincard = () => {
                                                 <p className="mb-0">8.5</p>
                                             </div>
                                         </div>
-                                        {/* <div className="d-flex pt-1">
-                                        <button type="button" data-mdb-button-init data-mdb-ripple-init className="btn btn-outline-primary me-1 flex-grow-1">Chat</button>
-                                        <button type="button" data-mdb-button-init data-mdb-ripple-init className="btn btn-primary flex-grow-1">Follow</button>
-                                    </div> */}
                                     </div>
                                 </div>
                             </div>

@@ -4,7 +4,7 @@ const ListaFP = (prop) => {
 
     //le paso el idFP para cuando se haga click en el checkbox se active 
     // ya que si no se le pasa el id se activa siempre el mismo.
-    const idFP = `CFP${prop.codigo}`
+    const idFP = `${prop.codigo}`
 
     return (
         <>

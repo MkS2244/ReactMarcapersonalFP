@@ -16,7 +16,7 @@ const useProyects = () => {
         getProyects().then(datos => {
             setProyects( datos )
 
-            console.log("Datos de Proyectos: ",datos)
+            //console.log("Datos de Proyectos: ",datos)
 
             setBuscando(false)
         })
@@ -25,6 +25,6 @@ const useProyects = () => {
     //para que se ejecute una sola vez al cargar la página
     useEffect(obtenerFP, [])
 
-    return {proyects}
+    return {proyects, buscando}
 }
 export default useProyects;
