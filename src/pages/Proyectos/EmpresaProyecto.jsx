@@ -1,3 +1,6 @@
+// --------------
+// COMPONENTES
+// --------------
 import ListaFP from "../../components/empresa/FiltrarFP/ListaFP";
 import MenuEmpresa from "../../components/Menu Empresa/menuEmpresa";
 import useFamiliaProfesional from "../../hooks/useFamiliaProfesional";
@@ -5,6 +8,7 @@ import './EmpresaProyecto.css'
 import IdiomaContext from "../../contexto/idiomaContext";
 import { useContext } from "react";
 import ResultadoBusquedaPr from "../../components/empresa/Busqueda Proyectos/ResultadoBusquedaPr";
+import { useForm } from "react-hook-form";
 
 const EmpresaProyecto = () => {
 
@@ -12,8 +16,14 @@ const EmpresaProyecto = () => {
 
     const fp = useFamiliaProfesional();
 
+    const { register, handleSubmit, watch } = useForm();
+
+    const familiaSeleccionada = watch("familias");
+    // para obtener la familia seleccionada
+
+    // le paso por prop el register de useForm para que actualice el valor de la familia seleccionada
     function listarFP(familia) {
-        return <ListaFP key={familia.codigo} nombre={familia.nombre} codigo={familia.codigo} />
+        return <ListaFP key={familia.codigo} nombre={familia.nombre} codigo={familia.codigo} register={register}/>
     }
 
     return (
@@ -32,7 +42,7 @@ const EmpresaProyecto = () => {
                     </details>
                 </div>
             </div>
-            <ResultadoBusquedaPr />
+            <ResultadoBusquedaPr familiaSeleccionada={familiaSeleccionada} />
         </>
     )
 }

@@ -16,7 +16,7 @@ const useFamiliaProfesional = () => {
         getFamiliaProfesional().then(datos => {
             
             setFP( datos )
-            console.log("Datos de FP: ",datos)
+            //console.log("Datos de FP: ",datos)
 
             setBuscando(false)
         })

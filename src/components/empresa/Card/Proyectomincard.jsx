@@ -16,7 +16,10 @@ const Proyectomincard = (prop) => {
                                 <p className="fw-bold mb-1"><strong>ALUMNOS</strong></p>
                                 <p className="mb-1">{prop.alumno}</p>
                                 <p className="mb-1"><strong>Tutor:</strong> </p>
-                                <p className="mb-0"><strong>Ciclos:</strong><a href="#">{prop.ciclos.join(" | ")}</a></p>
+                                <p className="mb-0"><strong>Ciclos:</strong><a href="#">{prop.ciclos.map((ciclo)=> {
+                                        <span key={ciclo.id}>{ciclo.codCiclo}</span>
+                                    })}
+                                </a></p>
                             </div>
                         </div>
                     </div>
