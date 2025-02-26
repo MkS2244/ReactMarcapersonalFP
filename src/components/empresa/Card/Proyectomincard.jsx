@@ -14,11 +14,9 @@ const Proyectomincard = (prop) => {
                             <div className="card-body">
                                 <h5 className="card-title">{prop.nombre}</h5>
                                 <p className="fw-bold mb-1"><strong>ALUMNOS</strong></p>
-                                <p className="mb-1">{prop.alumno}</p>
-                                <p className="mb-1"><strong>Tutor:</strong> </p>
-                                <p className="mb-0"><strong>Ciclos:</strong><a href="#">{prop.ciclos.map((ciclo)=> {
-                                        <span key={ciclo.id}>{ciclo.codCiclo}</span>
-                                    })}
+                                <p className="mb-1">{prop.name}</p>
+                                <p className="mb-1"><strong>Tutor:</strong>{prop.docente_id}</p>
+                                <p className="mb-0"><strong>Ciclos:</strong><a href="#">{prop.codCiclo}
                                 </a></p>
                             </div>
                         </div>

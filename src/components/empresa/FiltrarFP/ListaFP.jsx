@@ -6,6 +6,7 @@ const ListaFP = (prop) => {
     // ya que si no se le pasa el id se activa siempre el mismo.
     const idFP = prop.codigo
 
+    console.log("codigo listafp: ", prop.codigo)
     return (
         <>
             <input type="checkbox" id={idFP} className="customCheckBoxInput" 

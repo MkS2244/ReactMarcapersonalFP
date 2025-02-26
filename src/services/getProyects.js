@@ -14,11 +14,11 @@ export function getProyects (){
             // hago el map de los ciclos para conseguir el codigo del ciclo y el nombre
               codCiclo: ciclo.codCiclo,      // codigo del ciclo  
               familia_id: ciclo.familia_id,  // codigo de la familia
-              nombre: ciclo.nombre           // nombre del ciclo
+              nombreCiclo: ciclo.nombre           // nombre del ciclo
             })),
             participantes: proyecto.participantes.map(participante => ({
             // map de los participantes y concateno el nombre y apellidos   
-                nombre: `${participante.nombre} ${participante.apellidos}`
+                name: `${participante.nombre} ${participante.apellidos}`
             }))
         }));
     })
