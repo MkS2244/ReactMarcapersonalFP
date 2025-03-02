@@ -6,7 +6,8 @@ const idiomas = {
         cent: "Centros",
         filtrarFP: "filtrar por familia profesional",
         busquedaP: "Buscar por Proyecto",
-        resultados: "Resultados"
+        resultados: "Resultados",
+        busquedaAl: "Buscar por Alumno",
     },
     "eng": {
         emp: "Companies",
@@ -15,7 +16,8 @@ const idiomas = {
         cent: "Schools",
         filtrarFP: "filter by professional field",
         busquedaP: "Find a Proyect",
-        resultados: "Results"
+        resultados: "Results",
+        busquedaAl: "Find a Student",
     }
 }
 export default idiomas;

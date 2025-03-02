@@ -23,7 +23,7 @@
 }
 
 .checkbox-container{
-    display: flex;
+    display: inline-block;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 8px;

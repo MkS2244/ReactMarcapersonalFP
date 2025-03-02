@@ -1,14 +1,14 @@
-export function getFamiliaProfesional() {
-    const apiUrl = 'http://marcapersonalfp.test/api/v1/familias_profesionales'
+export function getCompetencias() {
+    const apiUrl = "http://marcapersonalfp.test/api/v1/competencias"
 
     return fetch(apiUrl, {
-        method: "GET"
+        method: "GET",
     })
     .then(response => response.json())
     .then(data => {
-        return data.map( familia => ({
-            nombre: familia.nombre,
-            id: familia.id
+        return data.map(competencia => ({
+            nombre: competencia.nombre,
+            id: competencia.id
         }));
     })
     .catch( er => {

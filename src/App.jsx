@@ -11,6 +11,7 @@ import { Routes, Route } from 'react-router-dom';
 import IdiomaContext from './contexto/idiomaContext';
 import useIdioma from './hooks/useIdioma';
 import EmpresaProyecto from './pages/Proyectos/EmpresaProyecto';
+import BusquedaAlumno from './pages/Alumnos/BusquedaAlumno';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
             <Route path='/alumno' element={<Alumno />} />
             <Route path='/centroeducativo' element={<Centro />} />
             <Route path="/empresa/proyectos" element={<EmpresaProyecto />} />
+            <Route path="/empresa/alumnos" element={<BusquedaAlumno />} />
           </Routes>
         </div>
       </IdiomaContext.Provider>
